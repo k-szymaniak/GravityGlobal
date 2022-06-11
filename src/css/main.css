@@ -1,0 +1,187 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1440px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
+    display: flex;
+}
+.MainBox{
+width: 50%;
+}
+.title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 120%;
+    color: #121212;
+}
+.copy{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    color: #121212;
+    width: 50%;
+}
+.button{
+    width: 128px;
+    height: 48px;
+    background: #E4C1AE;
+    border-radius: 32px;
+    border: 0;
+    color: white;
+}
+.rest{
+    border: 0;
+    border-radius: 25px;  
+    padding: 1rem;
+    margin-right: -35rem;
+    outline: none;
+    font-size: 1rem;
+}
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    z-index: 10;
+    background-color: white;
+    width: 920px;
+    height: 210px;
+    max-width: 80%;
+  }
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 120%;
+    padding-left: 2rem;
+  }
+  .modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 3rem;
+    font-weight: bold; 
+  } 
+  .modal-body {
+    padding-left: 4rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    color: #121212;
+  } 
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+  } 
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+  @media only screen and (max-width: 660px){
+    body{
+        width: 100%;     
+    }
+    .container{
+        width: 100%;
+        display: inline;  
+    }
+    .MainBox{
+        width: 100% !important;
+        text-align: center;
+        padding: 1rem;      
+    }
+    .img{
+        width:100%;
+    }
+    .title{
+        width:100%;
+    }
+    .copy{
+        width: 100%;
+    }
+    .button{
+        width: 100%;
+    }
+    .modal{
+        width: 100%;
+        max-width: 100%;
+        text-align: left;
+        font-size: 20px;
+    }
+    .rest{
+        margin-right:0;
+    }
+  }
+  @media only screen and (min-width:661px) and (max-width:1300px){
+    body{
+        width: 100%;     
+    }
+    .container{
+        width: 100%;
+        display: block;
+        display: flex; 
+        
+    }
+    .MainBox{
+        width: 50% !important;
+        text-align: center;
+        padding: 1rem;      
+    }
+    .img{
+        width:100%;
+    }
+    .title{
+        width:100%;
+    }
+    .copy{
+        width: 100%;
+    }
+    .button{
+        width: 100%;
+    }
+    .modal{
+        width: 100%;
+        max-width: 100%;
+        text-align: left;
+        font-size: 20px;
+    }
+    .rest{
+        margin-right:0;
+    }
+  }
